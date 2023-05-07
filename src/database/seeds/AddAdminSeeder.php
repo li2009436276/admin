@@ -15,7 +15,7 @@ class AddAdminSeeder extends Seeder
         $time = date('Y-m-d H:i:s');
 
         //添加管理员
-        $count = \App\Models\Admin::count();
+        $count = \Admin\Models\Admin::count();
         if ($count == 0) {
 
             $admin['role_id'] = 1;
@@ -26,19 +26,19 @@ class AddAdminSeeder extends Seeder
             $admin['phone'] = '13373944332';
             $admin['email'] = '2066617574@qq.com';
             $admin['head_img'] = '/img/user.png';
-            \App\Models\Admin::create($admin);
+            \Admin\Models\Admin::create($admin);
         }
 
         //添加角色
-        $count = \App\Models\Role::count();
+        $count = \Admin\Models\Role::count();
         if ($count == 0) {
 
             $roles['name'] = '超级管理员';
-            \App\Models\Role::create($roles);
+            \Admin\Models\Role::create($roles);
         }
 
         //添加路由
-        $count = \App\Models\Route::count();
+        $count = \Admin\Models\Route::count();
         if ($count == 0) {
 
             $routes = [
@@ -180,11 +180,11 @@ class AddAdminSeeder extends Seeder
                 ],
             ];
 
-            \App\Models\Route::insert($routes);
+            \Admin\Models\Route::insert($routes);
         }
 
         //添加角色权限
-        $count = \App\Models\RoleRoute::count();
+        $count = \Admin\Models\RoleRoute::count();
         if ($count == 0) {
 
             $roleRoutes = [];
@@ -199,7 +199,7 @@ class AddAdminSeeder extends Seeder
                 ];
             }
 
-            \App\Models\RoleRoute::insert($roleRoutes);
+            \Admin\Models\RoleRoute::insert($roleRoutes);
         }
     }
 }
