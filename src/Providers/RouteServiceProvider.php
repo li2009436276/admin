@@ -27,13 +27,13 @@ class RouteServiceProvider extends ServiceProvider
     {
 
         Route::middleware('web')
-            ->namespace('WxLogin\Controllers\Web')
+            ->namespace('Admin\Controllers\Web')
             ->group(__DIR__.'/../routes/web.php');
 
 
         Route::prefix(config('wx.api_prefix'))
             ->middleware('api')
-            ->namespace('WxLogin\Controllers\Api')
+            ->namespace('Admin\Controllers\Api')
             ->group(__DIR__ . '/../routes/api.php');
     }
 }
