@@ -27,7 +27,7 @@ class RouteServiceProvider extends ServiceProvider
     {
 
         Route::middleware('web')
-            ->namespace('Admin\Controllers\Web')
+            ->namespace('Admin\Controllers')
             ->group(__DIR__.'/../routes/web.php');
 
     }
