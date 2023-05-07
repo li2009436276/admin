@@ -2,6 +2,7 @@
 
 namespace Admin\Providers;
 
+use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -16,9 +17,10 @@ class AppServiceProvider extends ServiceProvider
 
         $this->publishes([
             __DIR__ . '/../database/migrations/' => database_path('migrations'),
-            __DIR__ . '/../views/' => resource_path('views'),
 
         ]);
+
+        View::addLocation( __DIR__ . '/../views/views');
     }
 
     /**
