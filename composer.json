@@ -1,0 +1,27 @@
+{
+    "name": "www/admin",
+    "description": "管理员",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "lwq",
+            "email": "571816409@qq.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Admin\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "www/curl": "^1.0",
+        "www/make-rep": "^1.0.2"
+    },
+    "extra": {
+        "laravel": {
+            "providers": ["Admin\\Providers\\AppServiceProvider", "Admin\\Providers\\RouteServiceProvider"]
+        }
+    }
+}
