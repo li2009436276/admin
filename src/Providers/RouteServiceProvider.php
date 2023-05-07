@@ -30,10 +30,5 @@ class RouteServiceProvider extends ServiceProvider
             ->namespace('Admin\Controllers\Web')
             ->group(__DIR__.'/../routes/web.php');
 
-
-        Route::prefix(config('wx.api_prefix'))
-            ->middleware('api')
-            ->namespace('Admin\Controllers\Api')
-            ->group(__DIR__ . '/../routes/api.php');
     }
 }
