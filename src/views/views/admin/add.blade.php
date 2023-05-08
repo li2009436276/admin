@@ -90,7 +90,7 @@
 @endsection
 
 @push('script')
-    <script src="/js/md5.js"></script>
+    <script src="/static/js/md5.js"></script>
     <script>
         layui.use(['form','upload'], function(){
             var $ = layui.$

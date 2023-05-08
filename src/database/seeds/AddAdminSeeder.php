@@ -178,6 +178,16 @@ class AddAdminSeeder extends Seeder
                     'created_at' => $time,
                     'updated_at' => $time,
                 ],
+                [
+                    'id' => 14,
+                    'pid' => 7,
+                    'path' => '/route/ajaxDelete',
+                    'name' => '权限删除',
+                    'icon' => null,
+                    'status' => 2,//该路由不显示
+                    'created_at' => $time,
+                    'updated_at' => $time,
+                ],
             ];
 
             \Admin\Models\Route::insert($routes);
@@ -188,7 +198,7 @@ class AddAdminSeeder extends Seeder
         if ($count == 0) {
 
             $roleRoutes = [];
-            for ($i = 1; $i < 14; $i++) {
+            for ($i = 1; $i < 15; $i++) {
 
                 $roleRoutes[] = [
 

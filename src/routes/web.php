@@ -35,6 +35,7 @@ Route::group([
     Route::get('/role/ajaxLists', 'RoleController@ajaxLists');
     Route::get('/role/update', 'RoleController@update');
     Route::post('/role/ajaxUpdate', 'RoleController@ajaxUpdate');
+
     Route::get('/route/add', 'RouteController@add');
     Route::post('/route/ajaxAdd', 'RouteController@ajaxAdd');
     Route::get('/route/update', 'RouteController@update');
