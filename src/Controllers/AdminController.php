@@ -13,7 +13,7 @@ use Admin\Repositories\Contracts\RoleInterface;
 use Curl\PwdService\PwdService;
 use Illuminate\Http\Request;
 
-class AdminController extends Controller
+class AdminController
 {
 
     private $adminInterface;

@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\Http\Requests\Route;
+namespace Admin\Requests\Route;
 
 
 use Illuminate\Foundation\Http\FormRequest;

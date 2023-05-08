@@ -10,7 +10,7 @@ use Admin\Resources\ErrorResource;
 use Admin\Repositories\Contracts\RouteInterface;
 use Illuminate\Http\Request;
 
-class RouteController extends Controller
+class RouteController
 {
     private $routeInterface;
 

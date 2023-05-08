@@ -11,7 +11,7 @@ use Admin\Resources\ErrorResource;
 use Admin\Repositories\Contracts\RoleInterface;
 use Illuminate\Http\Request;
 
-class RoleController extends Controller
+class RoleController
 {
 
     private $roleInterface;
