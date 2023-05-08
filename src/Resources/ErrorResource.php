@@ -35,7 +35,7 @@ class ErrorResource extends Resource
             $code = $this->resource;
         }
 
-        list($code,$msg) = config("code.{$code}");
+        list($code,$msg) = config("admin_code.{$code}");
         return [
             'errcode' => $code,
             'errmsg' => !empty($this->resource['msg']) ? $this->resource['msg']: $msg

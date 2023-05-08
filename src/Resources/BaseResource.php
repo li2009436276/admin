@@ -20,7 +20,7 @@ class BaseResource extends Resource
             $this->resource = 'SUCCESS';
         }
 
-        list($code,$msg) = config("code.$this->resource");
+        list($code,$msg) = config("admin_code.$this->resource");
         return [
             'errcode' => $code,
             'errmsg' => $msg
