@@ -42,7 +42,7 @@
     </div>
 
 </div>
-<script src="/js/md5.js"></script>
+<script src="/static/js/md5.js"></script>
 <script>
     layui.use(['form','layer'], function(){
         var $ = layui.$
