@@ -5,7 +5,7 @@ namespace Admin\Controllers;
 
 use Illuminate\Support\Facades\Session;
 
-class IndexController extends Controller
+class IndexController
 {
 
     public function __construct(){
