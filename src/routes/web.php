@@ -5,6 +5,7 @@
 Route::get('/login/login','LoginController@login')->name('login');
 Route::get('/login/captcha','LoginController@captcha');
 Route::post('/login/ajaxLogin','LoginController@ajaxLogin');
+Route::post('/login/ajaxLogout','LoginController@ajaxLogout');
 
 //忘记密码
 Route::get('/login/forget','LoginController@forget');
