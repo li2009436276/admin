@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Admin\Http\Resources\Admin;
+namespace Admin\Resources\Admin;
 
 
 use Admin\Resources\BaseResource;
