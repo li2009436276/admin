@@ -47,7 +47,7 @@ class AdminController
         $data = $request->only(['account','phone','nickname','head_img','email','role_id','status']);
         $pwd  = PwdService::makePwd($request->pwd);
         $data = array_merge($data,$pwd);
-        $res = $this->adminInterface->create($data);
+        $res = $this->adminInterface->add($data);
         if ($res) {
 
             return new BaseResource([]);

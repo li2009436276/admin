@@ -17,32 +17,6 @@ class AdminRepository extends Repository implements AdminInterface
         return Admin::class;
     }
 
-    /**
-     * 管理员添加
-     * @param $data
-     * @return bool|mixed
-     * @throws \MakeRep\Exceptions\ApiException
-     */
-    public function create($data)
-    {
-        DB::beginTransaction();
-        $res = $this->add($data);
-        if ($res) {
-
-            $adminAttrInterface = resolve('App\Repositories\Contracts\AdminAttrInterface');
-            $addRes = $adminAttrInterface->add(['admin_id'=>$res->id]);
-            if ($addRes) {
-
-                DB::commit();
-                return true;
-            }
-            DB::rollback();
-            tne('ADMIN_ATTR_ADD_ERROR');
-        }
-
-        DB::rollback();
-        tne('ADMIN_ADD_ERROR');
-    }
 
     /**
      * 管理员列表

@@ -84,13 +84,13 @@ class RoleRepository extends Repository implements RoleInterface
         //角色分配的权限
         if ($roleId) {
 
-            $roleRouteInterface = resolve('App\Repositories\Contracts\RoleRouteInterface');
+            $roleRouteInterface = resolve('Admin\Repositories\Contracts\RoleRouteInterface');
             $roleRoutes = $roleRouteInterface->get(['role_id' => $roleId], ['route_id']);
             $roleRoutes = $roleRoutes->pluck('route_id')->toArray();
         }
 
         //所有权限
-        $routeInterface = resolve('App\Repositories\Contracts\RouteInterface');
+        $routeInterface = resolve('Admin\Repositories\Contracts\RouteInterface');
         $routes = $routeInterface->get([],['id','pid','name as title','icon','name','path','sort','status'])->toArray();
 
         foreach ($routes as $key=>&$value) {
@@ -128,7 +128,7 @@ class RoleRepository extends Repository implements RoleInterface
     private function roleRouteAdd($roleId,$routes){
 
         //删除原角色ID
-        $roleRouteInterface = resolve('App\Repositories\Contracts\RoleRouteInterface');
+        $roleRouteInterface = resolve('Admin\Repositories\Contracts\RoleRouteInterface');
         $roleRouteInterface->delete(['role_id'=>$roleId]);
 
         $routeData = [];

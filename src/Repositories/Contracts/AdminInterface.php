@@ -8,13 +8,6 @@ interface AdminInterface
 {
 
     /**
-     * 添加管理员
-     * @param $data
-     * @return mixed
-     */
-    public function create($data);
-
-    /**
      * 管理员列表
      * @param $where
      * @param int $pageSize
