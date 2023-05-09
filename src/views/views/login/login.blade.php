@@ -69,6 +69,7 @@
             oUser.val(getCookie('account')) ;
             oPswd.val(getCookie('pwd')) ;
             oRemember.attr('checked','checked');
+            form.render("checkbox");
         }
 
         //图形验证码
