@@ -31,7 +31,7 @@
     <div class="layui-side layui-side-menu">
         <div class="layui-side-scroll">
             <div class="layui-logo" lay-href="">
-                <span>客户管理系统</span>
+                <span>后台管理</span>
             </div>
             <ul class="layui-nav layui-nav-tree"  lay-filter="test">
                 @if(!empty(\Illuminate\Support\Facades\Session::get('admin')['menus']))
