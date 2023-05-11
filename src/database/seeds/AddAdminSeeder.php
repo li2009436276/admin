@@ -25,7 +25,6 @@ class AddAdminSeeder extends Seeder
             $admin['nickname'] = 'admin';
             $admin['phone'] = '13373944332';
             $admin['email'] = '2066617574@qq.com';
-            $admin['head_img'] = '/img/user.png';
             \Admin\Models\Admin::create($admin);
         }
 
