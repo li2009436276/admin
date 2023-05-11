@@ -58,7 +58,7 @@
                     <p>点击上传头像</p>
                 </div>
 
-                <input type="hidden" name="head_img" value="{{$avatar['path']}}" placeholder="上传头像" autocomplete="off" class="layui-input">
+                <input type="hidden" name="avatar" value="{{$avatar['path']}}" placeholder="上传头像" autocomplete="off" class="layui-input">
 
             </div>
         </div>
@@ -132,7 +132,7 @@
                     if (res.errcode == 0) {
 
                         $('#headimg').html('<img style="width: 100px;height: 100px" src="'+res.data[0].url+'"/>');
-                        $('input[name=head_img]').val(res.data[0].path);
+                        $('input[name=avatar]').val(res.data[0].path);
                     }
                 }
             });
