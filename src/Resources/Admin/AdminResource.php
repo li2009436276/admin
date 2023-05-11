@@ -17,7 +17,7 @@ class AdminResource extends BaseResource
             'nickname'  => $this->nickname,
             'phone'     => $this->phone,
             'email'     => $this->email,
-            'head_img'  => $this->head_img,
+            'avatar'  => $this->avatar,
             'role_name' => $this->role->name,
             'status'    => $this->status
         ];

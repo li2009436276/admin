@@ -45,7 +45,7 @@
                 ,cols: [[
                     {field: 'id', hide: true}
                     ,{field:'avatar', title:'头像',templet:function(row){
-                        var headImg = '/default/img/user.png';
+                        var headImg = '/static/images/user.png';
                             if (row.avatar != '' && row.avatar != null )  headImg = row.avatar.url;
                             return '<img style="width: 20px;height: 20px;" src="'+headImg+'">';
                         }}
