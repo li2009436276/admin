@@ -53,12 +53,12 @@
             <div class="layui-input-inline">
                 <div class="layui-upload-drag" id="test9">
                     <i class="layui-icon" id="headimg">
-                        @if($head_img) <img style="width: 100px;height: 100px;" src="{{$head_img['url']}}" /> @else &#xe67c; @endif
+                        @if($avatar) <img style="width: 100px;height: 100px;" src="{{$avatar['url']}}" /> @else &#xe67c; @endif
                     </i>
                     <p>点击上传头像</p>
                 </div>
 
-                <input type="hidden" name="head_img" value="{{$head_img['path']}}" placeholder="上传头像" autocomplete="off" class="layui-input">
+                <input type="hidden" name="head_img" value="{{$avatar['path']}}" placeholder="上传头像" autocomplete="off" class="layui-input">
 
             </div>
         </div>

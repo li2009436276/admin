@@ -44,9 +44,9 @@
                 }
                 ,cols: [[
                     {field: 'id', hide: true}
-                    ,{field:'head_img', title:'头像',templet:function(row){
+                    ,{field:'avatar', title:'头像',templet:function(row){
                         var headImg = '/default/img/user.png';
-                            if (row.head_img != '' && row.head_img != null )  headImg = row.head_img.url;
+                            if (row.avatar != '' && row.avatar != null )  headImg = row.avatar.url;
                             return '<img style="width: 20px;height: 20px;" src="'+headImg+'">';
                         }}
                     ,{field: 'account', title: '账号'}

@@ -13,7 +13,7 @@ class Admin extends Model
     use SoftDeletes;
     protected $table = 'admins';
     protected $fillable = [
-        'id','role_id','account','pwd','salt','nickname','phone','email','head_img','status'
+        'id','role_id','account','pwd','salt','nickname','phone','email','avatar','status'
     ];
 
     /**
@@ -21,7 +21,7 @@ class Admin extends Model
      * @param $value
      * @return array
      */
-    public function getHeadImgAttribute($value){
+    public function getAvatarAttribute($value){
 
         if (!empty($value)) {
 

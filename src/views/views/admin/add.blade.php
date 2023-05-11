@@ -55,7 +55,7 @@
                     <p>点击上传头像</p>
                 </div>
 
-                <input type="hidden" name="head_img" placeholder="上传头像" autocomplete="off" class="layui-input">
+                <input type="hidden" name="avatar" placeholder="上传头像" autocomplete="off" class="layui-input">
             </div>
         </div>
 
