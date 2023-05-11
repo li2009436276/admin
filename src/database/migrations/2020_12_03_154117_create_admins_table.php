@@ -22,7 +22,7 @@ class CreateAdminsTable extends Migration
             $table->string('nickname',50)->comment('昵称');
             $table->string('phone',11)->comment('手机号');
             $table->string('email',20)->comment('邮箱');
-            $table->string('head_img')->nullable()->comment('头像');
+            $table->string('avatar')->nullable()->comment('头像');
             $table->tinyInteger('status')->default(1)->comment('状态：1=正常,2=禁用,3=离职');
             $table->softDeletes();
             $table->timestamps();
