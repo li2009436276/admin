@@ -11,10 +11,10 @@
         <ul class="layui-nav layui-layout-right">
             <li class="layui-nav-item">
                 <a href="javascript:;">
-                    @if(!empty(session('admin')['head_img']))
-                        <img src="{{session('admin')['head_img']['url']}}" class="layui-nav-img">
+                    @if(!empty(session('admin')['avatar']))
+                        <img src="{{session('admin')['avatar']['url']}}" class="layui-nav-img">
                     @else
-                        <img src="/storage/app/public/img/user.png" class="layui-nav-img">
+                        <img src="/static/imgages/user.png" class="layui-nav-img">
                     @endif
                     {{session('admin')['nickname']}}
                 </a>
