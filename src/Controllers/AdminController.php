@@ -44,7 +44,7 @@ class AdminController
      */
     public function ajaxAdd(AdminAddRequest $request){
 
-        $data = $request->only(['account','phone','nickname','head_img','email','role_id','status']);
+        $data = $request->only(['account','phone','nickname','avatar','email','role_id','status']);
         $pwd  = PwdService::makePwd($request->pwd);
         $data = array_merge($data,$pwd);
         $res = $this->adminInterface->add($data);
@@ -103,7 +103,7 @@ class AdminController
      * @return BaseResource|ErrorResource
      */
     public function ajaxUpdate(AdminUpdateRequest $request){
-        $data = $request->only(['account','pwd','phone','nickname','head_img','email','role_id','status']);
+        $data = $request->only(['account','pwd','phone','nickname','avatar','email','role_id','status']);
         $res = $this->adminInterface->update(['id'=>$request->id],$data);
         if ($res) {
 
