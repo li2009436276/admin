@@ -47,7 +47,7 @@ class AdminAuth
         //判断是否是ajax请求
         if (strpos('  '.$request->header('accept'),'application/json')) {
 
-           return tne('NO_AUTH');
+           return tne('NO_AUTH',['code_file'=>'admin_code']);
         }
     }
 }
