@@ -25,7 +25,7 @@ class Admin extends Model
 
         if (!empty($value)) {
 
-            return ['url'=>Storage::url($value),'path'=>$value];
+            return ['src'=>Storage::url($value),'path'=>$value];
         }
 
         return $value;

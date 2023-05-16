@@ -131,8 +131,8 @@
                 ,done: function(res){
                     if (res.errcode == 0) {
 
-                        $('#headimg').html('<img style="width: 100px;height: 100px" src="'+res.data[0].url+'"/>');
-                        $('input[name=avatar]').val(res.data[0].path);
+                        $('#headimg').html('<img style="width: 100px;height: 100px" src="'+res.data.src+'"/>');
+                        $('input[name=avatar]').val(res.data.src);
                     }
                 }
             });

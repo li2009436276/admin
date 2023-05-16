@@ -46,7 +46,7 @@
                     {field: 'id', hide: true}
                     ,{field:'avatar', title:'头像',templet:function(row){
                         var headImg = '/static/images/user.png';
-                            if (row.avatar != '' && row.avatar != null )  headImg = row.avatar.url;
+                            if (row.avatar != '' && row.avatar != null )  headImg = row.avatar.src;
                             return '<img style="width: 20px;height: 20px;" src="'+headImg+'">';
                         }}
                     ,{field: 'account', title: '账号'}
