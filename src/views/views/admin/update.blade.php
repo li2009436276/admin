@@ -53,7 +53,7 @@
             <div class="layui-input-inline">
                 <div class="layui-upload-drag" id="test9">
                     <i class="layui-icon" id="headimg">
-                        @if($avatar) <img style="width: 100px;height: 100px;" src="{{$avatar['url']}}" /> @else &#xe67c; @endif
+                        @if($avatar) <img style="width: 100px;height: 100px;" src="{{$avatar['src']}}" /> @else &#xe67c; @endif
                     </i>
                     <p>点击上传头像</p>
                 </div>
