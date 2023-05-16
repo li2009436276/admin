@@ -132,7 +132,7 @@
                     if (res.errcode == 0) {
 
                         $('#headimg').html('<img style="width: 100px;height: 100px" src="'+res.data.src+'"/>');
-                        $('input[name=avatar]').val(res.data.src);
+                        $('input[name=avatar]').val(res.data.path);
                     }
                 }
             });
