@@ -62,7 +62,7 @@ layui.use(['form', 'layer'], function() {
     routeLayer = function (data,token,isUpdate) {
 
         //routeUrl
-        var routeLayerUrl = '/route/ajaxAdd';
+        var routeLayerUrl = '/npc/route/ajaxAdd';
 
         var routeLayer = layer.open({
             title:'权限路由信息',
@@ -76,7 +76,7 @@ layui.use(['form', 'layer'], function() {
         //判断data是否为空
         if (isUpdate) {
 
-            routeLayerUrl = '/route/ajaxUpdate'
+            routeLayerUrl = '/npc/route/ajaxUpdate'
             $('#route-id').val(data.id);
             $('#route-name').val(data.name);
             $('#route-path').val(data.path);
