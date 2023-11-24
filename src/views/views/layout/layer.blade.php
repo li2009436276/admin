@@ -81,7 +81,7 @@
 
         $('#logout').on('click',function (){
             $.ajax({
-                url: '/login/ajaxLogout'
+                url: '/npc/login/ajaxLogout'
                 , method: 'get'
                 , success: function (data) {
 
