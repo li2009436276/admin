@@ -26,7 +26,7 @@ class RouteServiceProvider extends ServiceProvider
     public function map()
     {
 
-        Route::prefix('npc')->middleware('web')
+        Route::prefix('npc')
             ->namespace('Admin\Controllers')
             ->group(__DIR__.'/../routes/web.php');
 
