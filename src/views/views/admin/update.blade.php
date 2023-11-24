@@ -104,7 +104,7 @@
             //监听提交
             form.on('submit(*)', function(data){
                 $.ajax({
-                    url: '/admin/ajaxUpdate'
+                    url: '/npc/admin/ajaxUpdate'
                     , method: 'post'
                     , data: data.field
                     , dataType: 'json'
@@ -118,7 +118,7 @@
 
                         if (data.errcode == 0) {
 
-                            window.location.href = '/admin/lists'
+                            window.location.href = '/npc/admin/lists'
                         }
                     },
                 });

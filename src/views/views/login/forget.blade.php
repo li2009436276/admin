@@ -57,7 +57,7 @@
             obj.field.confirm_pwd = hex_md5(obj.field.confirm_pwd);
             //请求登入接口
             $.ajax({
-                url: '/login/ajaxForget' //实际使用请改成服务端真实接口
+                url: '/npc/login/ajaxForget' //实际使用请改成服务端真实接口
                 ,method: 'post'
                 ,data: obj.field
                 ,dataType: 'json'
@@ -72,7 +72,7 @@
 
                     if (data.errcode == 0) {
 
-                        location.href = '/admin/'; //后台主页
+                        location.href = '/npc/login/login/'; //后台主页
                     }
                 }
             });

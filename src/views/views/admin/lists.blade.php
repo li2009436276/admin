@@ -18,7 +18,7 @@
 
             table.render({
                 elem: '#test2'
-                ,url: '/admin/ajaxLists'
+                ,url: '/npc/admin/ajaxLists'
                 ,page: { //详细参数可参考 laypage 组件文档
                     curr: 1
                     ,groups: 1
@@ -72,7 +72,7 @@
 
                         //向服务端发送删除指令
                         $.ajax({
-                            url: '/admin/ajaxDelete'
+                            url: '/npc/admin/ajaxDelete'
                             , method: 'post'
                             , data: {id:data.id,_token:'{{csrf_token()}}'}
                             , dataType: 'json'
@@ -94,7 +94,7 @@
 
                     });
                 } else if(layEvent === 'edit'){
-                    window.location.href = '/admin/update?id='+data.id;
+                    window.location.href = '/npc/admin/update?id='+data.id;
                 }
             });
 

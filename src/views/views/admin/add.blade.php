@@ -104,7 +104,7 @@
                 data.field.confirm_pwd = hex_md5(data.field.confirm_pwd);
 
                 $.ajax({
-                    url: '/admin/ajaxAdd'
+                    url: '/npc/admin/ajaxAdd'
                     , method: 'post'
                     , data: data.field
                     , dataType: 'json'

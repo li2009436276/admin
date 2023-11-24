@@ -68,7 +68,7 @@ class AddAdminSeeder extends Seeder
                 [
                     'id' => 3,
                     'pid' => 2,
-                    'path' => '/admin/lists',
+                    'path' => '/npc/admin/lists',
                     'name' => '管理员列表',
                     'icon' => null,
                     'status' => 1,
@@ -78,7 +78,7 @@ class AddAdminSeeder extends Seeder
                 [
                     'id' => 4,
                     'pid' => 2,
-                    'path' => '/admin/add',
+                    'path' => '/npc/admin/add',
                     'name' => '添加管理员',
                     'icon' => null,
                     'status' => 1,
@@ -88,7 +88,7 @@ class AddAdminSeeder extends Seeder
                 [
                     'id' => 5,
                     'pid' => 2,
-                    'path' => '/admin/update',
+                    'path' => '/npc/admin/update',
                     'name' => '管理员修改',
                     'icon' => null,
                     'status' => 2,//该路由不显示
@@ -98,7 +98,7 @@ class AddAdminSeeder extends Seeder
                 [
                     'id' => 6,
                     'pid' => 2,
-                    'path' => '/admin/ajaxDelete',
+                    'path' => '/npc/admin/ajaxDelete',
                     'name' => '管理员删除',
                     'icon' => null,
                     'status' => 2,//该路由不显示
@@ -120,7 +120,7 @@ class AddAdminSeeder extends Seeder
                 [
                     'id' => 8,
                     'pid' => 7,
-                    'path' => '/role/lists',
+                    'path' => '/npc/role/lists',
                     'name' => '角色列表',
                     'icon' => null,
                     'status' => 1,
@@ -130,7 +130,7 @@ class AddAdminSeeder extends Seeder
                 [
                     'id' => 9,
                     'pid' => 7,
-                    'path' => '/role/add',
+                    'path' => '/npc/role/add',
                     'name' => '添加角色',
                     'icon' => null,
                     'status' => 1,
@@ -140,7 +140,7 @@ class AddAdminSeeder extends Seeder
                 [
                     'id' => 10,
                     'pid' => 7,
-                    'path' => '/role/update',
+                    'path' => '/npc/role/update',
                     'name' => '角色修改',
                     'icon' => null,
                     'status' => 2,//该路由不显示
@@ -150,7 +150,7 @@ class AddAdminSeeder extends Seeder
                 [
                     'id' => 11,
                     'pid' => 7,
-                    'path' => '/role/ajaxDelete',
+                    'path' => '/npc/role/ajaxDelete',
                     'name' => '角色删除',
                     'icon' => null,
                     'status' => 2,//该路由不显示
@@ -160,7 +160,7 @@ class AddAdminSeeder extends Seeder
                 [
                     'id' => 12,
                     'pid' => 7,
-                    'path' => '/route/add',
+                    'path' => '/npc/route/add',
                     'name' => '权限添加',
                     'icon' => null,
                     'status' => 2,//该路由不显示
@@ -170,7 +170,7 @@ class AddAdminSeeder extends Seeder
                 [
                     'id' => 13,
                     'pid' => 7,
-                    'path' => '/route/update',
+                    'path' => '/npc/route/update',
                     'name' => '权限修改',
                     'icon' => null,
                     'status' => 2,//该路由不显示
@@ -180,7 +180,7 @@ class AddAdminSeeder extends Seeder
                 [
                     'id' => 14,
                     'pid' => 7,
-                    'path' => '/route/ajaxDelete',
+                    'path' => '/npc/route/ajaxDelete',
                     'name' => '权限删除',
                     'icon' => null,
                     'status' => 2,//该路由不显示

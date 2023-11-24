@@ -19,7 +19,7 @@
                     {{session('admin')['nickname']}}
                 </a>
                 <dl class="layui-nav-child">
-                    <dd><a href="/admin/update?id={{session('admin')['id']}}">基本资料</a></dd>
+                    <dd><a href="/npc/admin/update?id={{session('admin')['id']}}">基本资料</a></dd>
                 </dl>
             </li>
             <li class="layui-nav-item">
