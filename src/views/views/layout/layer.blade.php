@@ -14,7 +14,7 @@
                     @if(!empty(session('admin')['avatar']))
                         <img src="{{session('admin')['avatar']['src']}}" class="layui-nav-img">
                     @else
-                        <img src="/static/imgages/user.png" class="layui-nav-img">
+                        <img src="/static/images/user.png" class="layui-nav-img">
                     @endif
                     {{session('admin')['nickname']}}
                 </a>
