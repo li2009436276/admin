@@ -27,6 +27,7 @@ class RouteServiceProvider extends ServiceProvider
     {
 
         Route::prefix('npc')
+            ->middleware('web')
             ->namespace('Admin\Controllers')
             ->group(__DIR__.'/../routes/web.php');
 
