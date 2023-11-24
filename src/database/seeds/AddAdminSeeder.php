@@ -46,7 +46,7 @@ class AddAdminSeeder extends Seeder
                 [
                     'id' => 1,
                     'pid' => 0,
-                    'path' => '/',
+                    'path' => '/npc',
                     'name' => '控制台',
                     'icon' => 'layui-icon-user',
                     'status' => 2,
