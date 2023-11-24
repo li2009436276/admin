@@ -17,7 +17,7 @@ Route::group([
 ],function () {
 
     //操作台
-    Route::get('/', 'IndexController@index');
+    Route::get('/npc', 'IndexController@index');
 
     //管理员
     Route::get('/admin/add', 'AdminController@add');
