@@ -87,7 +87,7 @@
 
                     if (data.errcode == 0) {
 
-                        window.location.href = '/login/login'
+                        window.location.href = '/npc/login/login'
                     }
                 },
             });
