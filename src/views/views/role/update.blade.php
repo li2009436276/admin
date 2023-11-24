@@ -60,7 +60,7 @@
                     }else if(type == 'del'){
 
                         $.ajax({
-                            url: '/route/ajaxDelete'
+                            url: '/npc/route/ajaxDelete'
                             , method: 'post'
                             , data: {id:obj.data.id,_token:'{!! csrf_token() !!}'}
                             , dataType: 'json'
@@ -94,7 +94,7 @@
             form.on('submit(*)', function(data){
 
                 $.ajax({
-                    url: '/role/ajaxUpdate'
+                    url: '/npc/role/ajaxUpdate'
                     , method: 'post'
                     , data: data.field
                     , dataType: 'json'

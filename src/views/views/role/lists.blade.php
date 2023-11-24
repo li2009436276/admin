@@ -23,7 +23,7 @@
             table.render({
                 id: 'alert-lists'
                 ,elem: '#test2'
-                ,url: '/role/ajaxLists'
+                ,url: '/npc/role/ajaxLists'
                 //,height: 300
                 ,cellMinWidth: 80
                 //,skin: 'line'
@@ -64,7 +64,7 @@
 
                         //向服务端发送删除指令
                         $.ajax({
-                            url: '/api/alert/ajaxDelete'
+                            url: '/npc/role/ajaxDelete'
                             , method: 'post'
                             , data: {id:data.id,_token:'{{csrf_token()}}'}
                             , dataType: 'json'
@@ -86,7 +86,7 @@
 
                     });
                 } else if(layEvent === 'edit'){
-                    window.location.href = '/role/update?id='+data.id;
+                    window.location.href = '/npc/role/update?id='+data.id;
                 }
             });
 
