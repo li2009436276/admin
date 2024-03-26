@@ -70,6 +70,7 @@
         © 客户管理系统 - 底部固定区域
     </div>
 </div>
+<script src="/static/js/common.js"></script>
 <script>
 
     layui.use(['element'], function(){
