@@ -33,6 +33,7 @@ class AdminAuth
         }
 
         $request->merge(['admin'=>$adminInfo]);
+        $request->merge(['admin_id'=>$adminInfo['id']]);
 
         return $next($request);
     }
