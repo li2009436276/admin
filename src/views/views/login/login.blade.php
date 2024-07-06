@@ -16,7 +16,7 @@
             <h2>登录</h2>
             <p>客户管理系统</p>
         </div>
-        <div class="layadmin-user-login-box layadmin-user-login-body layui-form">
+        <div class="layadmin-user-login-box layadmin-user-login-body layui-form" lay-filter="first">
             <input type="hidden" name="_token" value="{{csrf_token()}}">
             <div class="layui-form-item">
                 <label class="layadmin-user-login-icon layui-icon layui-icon-username" for="LAY-user-login-username"></label>
@@ -79,12 +79,12 @@
 
         var loginFunction = function (obj) {
 
-            obj.field.pwd = hex_md5(obj.field.pwd);
+            obj.pwd = hex_md5(obj.pwd);
             //请求登入接口
             $.ajax({
                 url: '/npc/login/ajaxLogin' //实际使用请改成服务端真实接口
                 ,method: 'post'
-                ,data: obj.field
+                ,data: obj
                 ,dataType: 'json'
                 ,success: function(data){
 
@@ -114,7 +114,7 @@
 
         //提交
         form.on('submit(LAY-user-login-submit)', function(obj){
-            loginFunction(obj);
+            loginFunction(obj.field);
         });
 
 
@@ -122,10 +122,8 @@
         document.addEventListener('keydown', function(event){
             if(event.keyCode === 13){ // 检查按键是否是Enter
                 // 触发Layui的form提交事件
-                form.on('submit(LAY-user-login-submit)', function(obj){
-                    loginFunction(obj);
-                    return false; // 阻止表单默认提交行为
-                });
+                var formData = form.val('first');
+                loginFunction(formData);
             }
         });
 
