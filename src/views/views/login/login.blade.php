@@ -58,7 +58,7 @@
     layui.use(['form','layer'], function(){
         var $ = layui.$
             ,form = layui.form
-            ,layer=layui.layer;
+            ,layer = layui.layer;
 
 
         //处理记住密码
@@ -77,8 +77,8 @@
             $(this).attr('src','/npc/login/captcha?v='+Math.random());
         });
 
-        //提交
-        form.on('submit(LAY-user-login-submit)', function(obj){
+        var loginFunction = function (obj) {
+
             obj.field.pwd = hex_md5(obj.field.pwd);
             //请求登入接口
             $.ajax({
@@ -110,6 +110,23 @@
                     }
                 }
             });
+        }
+
+        //提交
+        form.on('submit(LAY-user-login-submit)', function(obj){
+            loginFunction(obj);
+        });
+
+
+        // 监听Enter键
+        document.addEventListener('keydown', function(event){
+            if(event.keyCode === 13){ // 检查按键是否是Enter
+                // 触发Layui的form提交事件
+                form.on('submit(LAY-user-login-submit)', function(obj){
+                    loginFunction(obj);
+                    return false; // 阻止表单默认提交行为
+                });
+            }
         });
 
 
