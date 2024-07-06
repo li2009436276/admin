@@ -114,7 +114,7 @@
 
         //提交
         form.on('submit(LAY-user-login-submit)', function(obj){
-            
+
             loginFunction(obj.field);
         });
 
